@@ -46,16 +46,14 @@ export default function SignUpPage() {
         transition={{ duration: 0.5 }}
       >
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <form className="space-y-6" >
             <div>
               <Label htmlFor="fullName">Full Name</Label>
               <Input 
                 id="fullName" 
                 name="fullName" 
                 type="text" 
-                required 
-                value={formData.fullName}
-                onChange={handleInputChange}
+                required
               />
             </div>
 
@@ -66,8 +64,6 @@ export default function SignUpPage() {
                 name="email" 
                 type="email" 
                 required 
-                value={formData.email}
-                onChange={handleInputChange}
               />
             </div>
 
@@ -79,8 +75,6 @@ export default function SignUpPage() {
                   name="password" 
                   type={showPassword ? "text" : "password"} 
                   required 
-                  value={formData.password}
-                  onChange={handleInputChange}
                 />
                 <button
                   type="button"
