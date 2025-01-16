@@ -19,30 +19,10 @@ import {
 
 export default function SignUpPage() {
   const [showPassword, setShowPassword] = useState(false)
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    password: '',
-    userType: ''
-  })
-  const router = useRouter()
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
-  }
-
-  const handleSelectChange = (value: string) => {
-    setFormData(prev => ({ ...prev, userType: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData)
-    // Simulate a successful signup
-    router.push('/dashboard')
-  }
+  
+  const [name, setName] = useState<string> ("");
+  const [email, setEmail] = useState<string> ("")
+  const [password, setPassword] = useState<string>("");
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
@@ -115,21 +95,6 @@ export default function SignUpPage() {
                 </button>
               </div>
             </div>
-
-            <div>
-              <Label htmlFor="userType">I am a</Label>
-              <Select onValueChange={handleSelectChange}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select user type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="buyer">Buyer</SelectItem>
-                  <SelectItem value="seller">Seller</SelectItem>
-                  <SelectItem value="agent">Agent</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
             <div>
               <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
                 Sign up

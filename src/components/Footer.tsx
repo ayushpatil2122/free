@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
           <span className="text-2xl font-bold">YASHODHA ENTERPRISES</span>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mt-4">
               <Link href="#" className="hover:text-gray-400">
                 <span className="sr-only">X (Twitter)</span>
                 <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
@@ -79,7 +79,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-gray-400">
-
+            &copy;2025 midnightsolutions.in All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
             <Link href="#" className="hover:text-white">Refund policy</Link>

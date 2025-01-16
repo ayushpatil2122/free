@@ -45,7 +45,12 @@ export default function SearchSection() {
               <SelectValue placeholder="Select location" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="pune">Pune</SelectItem>
+              <SelectItem value="Katraj">Katraj</SelectItem>
+              <SelectItem value="Kondhwa">Kondhwa</SelectItem>
+              <SelectItem value="Kothrud">Kothrud</SelectItem>
+              <SelectItem value="Bibwewadi">Bibwewadi</SelectItem>
+              <SelectItem value="Bavdhan">Bavdhan</SelectItem>
+              <SelectItem value="Wagholi">Wagholi</SelectItem>
             </SelectContent>
           </Select>
           

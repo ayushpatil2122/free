@@ -11,8 +11,8 @@ import {
 import Image from 'next/image'
 
 const locations = [
-  { name: 'Baner', image: '/Baner.jpeg' },
-  { name: 'Hadapsar', image: '/Hadapsar.jpeg' },
+  { name: 'Katraj', image: '/Baner.jpeg' },
+  { name: 'Kondhwa', image: '/Hadapsar.jpeg' },
   { name: 'Kothrud', image: '/Kothrud.jpeg' },
   { name: 'Bibwewadi', image: '/Bibwewadi.jpeg' },
   { name: 'Bavdhan', image: '/Bavdhan.jpeg' },

@@ -4,6 +4,7 @@ import { Shield, BarChart, Users } from 'lucide-react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -28,7 +29,9 @@ export default function HeroSection() {
               <FeatureTag icon={Users} text="Expert Advisors" />
             </div>
             <div className="flex gap-4 pt-4">
-              <Button size="lg">Explore Properties</Button>
+              <Link href="/explore">
+                <Button size="lg">Explore Properties</Button>
+              </Link>
               <Button size="lg" variant="outline">Learn More</Button>
             </div>
           </motion.div>
